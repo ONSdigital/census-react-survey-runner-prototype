@@ -1,0 +1,169 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html lang="en-gb" dir="ltr" class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en-gb" dir="ltr" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>2019 Census</title>
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= cdnUrlPrefix %>/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="<%= cdnUrlPrefix %>/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="<%= cdnUrlPrefix %>/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="<%= cdnUrlPrefix %>/favicons/manifest.json">
+    <link rel="mask-icon" href="<%= cdnUrlPrefix %>/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js')</script>
+    <!--<![endif]-->
+
+    <!--[if (gt IE 9) | (IEMobile)]><!-->
+    <link href="<%= cdnUrlPrefix %>/css/responsive.css" rel="stylesheet" />
+    <!--<![endif]-->
+    <!--[if (lte IE 9) & (!IEMobile)]>
+      <link href="<%= cdnUrlPrefix %>/css/fixed.css" rel="stylesheet" />
+    <![endif]-->
+
+    <link href="/static/theme.min.css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    <!-- TODO -->
+    <!-- End Google Analytics -->
+
+    <!-- TODO: Session timeout -->
+</head>
+
+<body>
+    <div class="page">
+
+        <div class="page__content">
+
+            <div class="skip">
+                <a class="skip__link" href="#main">Skip to content</a>
+            </div>
+
+            <header class="page__header">
+
+                <header class="header header--census">
+                    <div class="header__help is-closed js-help-body">
+                        <div class="header__container container">
+                            <div class="header__title ">Help and support &ndash;</div>
+                            <ul class="header__nav nav nav--horizontal">
+                                <li class="nav__item">
+                                    <span class="mars" role="presentation">Call </span> <a class="venus nav__link" href="tel:03000683001"><span
+                                            class="u-vh">For help call </span>0300 068 3001</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="venus nav__link external" href="http://www.ons.gov.uk/census/help" target="_blank"
+                                        rel="noopener noreferrer">Online Help</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__container container">
+                        <div class="header__logo">
+                            <img src="/static/census-logo.svg" alt="2019 Census" />
+                        </div>
+                    </div>
+                </header>
+            </header>
+
+            <div class="page__subheader">
+                <div class="container"></div>
+            </div>
+
+            <div class="page__container container">
+                <div id="AppContainer"><%= preloadedApplication %></div>
+            </div>
+        </div>
+
+        <footer class="page__footer">
+
+
+            <footer class="footer2 page__footer2 print__hidden">
+                <div class="footer2-nav container" role="contentinfo">
+
+                    <div class="grid container">
+                        <div class>
+                            <div class="grid__col col-4@m">
+                                <div class="footer2-nav__heading">
+                                    <p class="venus"><strong>Legal information</strong></p>
+                                </div>
+                                <ul class="list footer__list">
+                                    <li class="footer2-nav__item">
+                                        <a href="/cookies-privacy" class="footer2__link" target="_blank">Cookies and
+                                            privacy</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="grid__col col-4@m">
+                                <div class="footer2-nav__heading">
+                                    <p class="venus"><strong>About ONS</strong></p>
+                                </div>
+                                <ul class="list footer__list">
+                                    <li class="footer2-nav__item">
+                                        <a href="https://www.ons.gov.uk/aboutus/whatwedo" target="_blank" class="footer2__link">What
+                                            we do</a>
+                                    </li>
+                                    <li class="footer2-nav__item">
+                                        <a href="/contact-us" target="_blank" class="footer2__link">Contact us</a>
+                                    </li>
+                                    <li class="footer2-nav__item">
+                                        <a href="https://www.ons.gov.uk/help/accessibility" target="_blank" class="footer2__link">Accessibility</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="grid__col col-4@m">
+                                <div class="footer2-nav__heading">
+                                    <p class="venus"><strong>Statistics</strong></p>
+                                </div>
+                                <ul class="list footer__list">
+                                    <li class="footer2-nav__item">
+                                        <a href="https://www.statisticsauthority.gov.uk/about-the-authority/" target="_blank"
+                                            class="footer2__link">UK Statistics Authority</a>
+                                    </li>
+                                    <li class="footer2-nav__item">
+                                        <a href="https://www.ons.gov.uk/releasecalendar" target="_blank" class="footer2__link">Release
+                                            calendar</a>
+                                    </li>
+                                    <li class="footer2-nav__item">
+                                        <a class="footer2__link" href="https://www.ons.gov.uk/news" target="_blank">News</a>
+                                    </li>
+                                </ul>
+                                <br />
+                            </div>
+                            <div class="dl__data mars"><img src="https://cdn.ons.gov.uk/sdc/v1.4.4/img/ogl.svg" class="ogl__img"
+                                    alt="Open Government License logo" />
+                                All content is available under the <a class="footer2__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                                    target="_blank">Open Government Licence v3.0</a>, except where otherwise stated
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </footer>
+
+    </div>
+
+    <!--[if gte IE 9]><!-->
+    <script src="<%= cdnUrlPrefix %>/scripts/bundle.min.js"></script>
+    <script type=”application/json” id="bootstrapData">
+        <%= bootstrapData %>
+       </script>
+    <script src="/static/bundle.js"></script>
+    <!--<![endif]-->
+</body>
+
+</html>

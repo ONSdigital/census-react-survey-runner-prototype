@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/src/server/index.jsx",
+            "runtimeExecutable": "babel-node",
+            "env": {
+                "NODE_ENV": "development",
+                "SESSION_SECRET": "yellow sky",
+                "BABEL_ENV": "debug",
+                "USE_SERVER_RENDER": "true",
+                "EQ_SERVER_SIDE_STORAGE_USER_ID_SALT": "condiment1",
+                "EQ_SERVER_SIDE_STORAGE_USER_IK_SALT": "condiment2"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program Prod",
+            "program": "${workspaceFolder}/build/server/index.js",
+            "runtimeExecutable": "node",
+            "env": {
+                "NODE_ENV": "production",
+                "SESSION_SECRET": "bright green bricks",
+                "BABEL_ENV": "production",
+                "USE_SERVER_RENDER": "true",
+                "EQ_SERVER_SIDE_STORAGE_USER_ID_SALT": "salty1",
+                "EQ_SERVER_SIDE_STORAGE_USER_IK_SALT": "salty2"
+            }
+        }
+    ]
+}

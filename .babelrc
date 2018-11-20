@@ -1,0 +1,27 @@
+{
+    "presets": [
+        "react",
+        "env"
+    ],
+    "ignore": [
+        "**/client/",
+        "**/public/",
+        "**/static/"
+    ],
+    "plugins": [
+        "transform-object-rest-spread",
+        ["transform-runtime", {
+            "polyfill": false,
+            "regenerator": true
+        }]
+    ],
+    "env": {
+        "debug": {
+            "sourceMaps": "inline",
+            "retainLines": true
+        },
+        "targets": {
+            "node": "current"
+        }
+    }
+}
